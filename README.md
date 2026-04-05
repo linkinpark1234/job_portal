@@ -7,7 +7,7 @@ It allows users to register, login, and post job listings dynamically.
 
 ---
 
-Features
+Features 
 
 * User Registration & Login
 * Session-based Authentication
@@ -39,3 +39,13 @@ job_portal/
 2. Login with credentials
 3. Access dashboard
 4. Post jobs and view listings
+
+Added Screenshots
+Register Page
+![Register](screenshots/register.png)
+
+Login Page
+![Login](screenshots/login.png)
+
+Dashboard
+![Dashboard](screenshots/dashboard.png)
