@@ -13,5 +13,5 @@ CREATE TABLE jobs (
     id INT AUTO_INCREMENT PRIMARY KEY,
     title VARCHAR(100),
     company VARCHAR(100),
-    description TEXT
+    description TEXT  
 );

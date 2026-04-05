@@ -6,7 +6,7 @@ app.secret_key = "secret123"
 
 app.config["MYSQL_HOST"] = "localhost"
 app.config["MYSQL_USER"] = "root"
-app.config["MYSQL_PASSWORD"] = "yourpassword"
+app.config["MYSQL_PASSWORD"] = "1234"
 app.config["MYSQL_DB"] = "job_portal"
 
 mysql = MySQL(app)
@@ -51,6 +51,9 @@ def login():
 
 @app.route("/dashboard")
 def dashboard():
+    if "user" not in session:
+        return redirect(url_for("login"))
+    
     cur = mysql.connection.cursor()
     cur.execute("SELECT * FROM jobs")
     jobs = cur.fetchall()
@@ -69,6 +72,11 @@ def post_job():
     mysql.connection.commit()
     cur.close()
     return redirect(url_for("dashboard"))
+
+@app.route("/logout")
+def logout():
+    session.pop("user", None)
+    return redirect(url_for("login"))
 
 if __name__ == "__main__":
     app.run(debug=True)
