@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<h2>Post Job</h2>
+<form method="POST" action="/post_job">
+    <input type="text" name="title" placeholder="Job Title"><br>
+    <input type="text" name="company" placeholder="Company"><br>
+    <textarea name="description"></textarea><br>
+    <button type="submit">Post</button>
+</form>
+
+<h2>All Jobs</h2>
+
+{% for job in jobs %}
+    <h3>{{ job[1] }}</h3>
+    <p>{{ job[2] }}</p>
+    <p>{{ job[3] }}</p>
+    <hr>
+{% endfor %}
+
+{% endblock %}
