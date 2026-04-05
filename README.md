@@ -42,10 +42,10 @@ job_portal/
 
 Added Screenshots
 Register Page
-![Register](screenshots/register.png)
+C:\pythonAC\job_portal\screenshots\Screenshot 2026-04-05 192400.png
 
 Login Page
-![Login](screenshots/login.png)
+C:\pythonAC\job_portal\screenshots\Screenshot 2026-04-05 192420.png
 
 Dashboard
-![Dashboard](screenshots/dashboard.png)
+C:\pythonAC\job_portal\screenshots\Screenshot 2026-04-05 192455.png
