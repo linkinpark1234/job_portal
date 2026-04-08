@@ -40,7 +40,7 @@ job_portal/
 3. Access dashboard
 4. Post jobs and view listings
 
-Added Screenshots
+## Added Screenshots
 Register Page
 C:\pythonAC\job_portal\screenshots\Screenshot 2026-04-05 192400.png
 
